@@ -1,0 +1,263 @@
+:root {
+
+  @font-face {
+    font-family: overlock;
+    src: url('./fonts/Overlock/Overlock-Black.ttf');
+  }
+
+  @font-face {
+    font-family: Comfortaa;
+    src: url('./fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+  }
+  
+  
+
+  /* dark mode colors */
+
+  /* color of the background on the sides */
+  --dark-bg: rgba(177, 189, 159, 0.9);
+  --dark-border: rgb(108, 208, 116);
+  
+  /*  color of the background of the individual content box*/
+  --dark-bodySection-bg: rgba(7, 85, 24, 0.2);
+
+  /* color directly behind the text in a content box */
+  --dark-sectionBlurb-bg: rgba(88, 72, 79, 0.6);
+  /* --dark-text-color: rgb(235, 235, 224); */
+
+  --dark-text-color: white;
+  /* background of the contact me panel */
+  --dark-contact-bg: rgb(62, 107, 14);
+  
+  --link-color: rgb(195, 223, 240);
+  /* --link-color: rgb(68, 68, 65); */
+}
+
+
+
+body {
+/* background-color: var(--dark-bg); */
+max-height: 100vh;
+background-image: url("./img/bamboo.jpg");
+background-size: cover;
+background-attachment: fixed;
+
+font-family: Comfortaa, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+color:var(--dark-text-color)
+}
+
+#root {
+display: grid;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  place-self: center;
+  display: grid;
+  grid-template-columns: 10vw 70vw 20vw;
+}
+
+/* left column currently unused except for spacing */
+/* .left-column {} */
+
+/* middle column is container for majority of site content */
+.middle-column {
+  margin-left: 10%;
+  place-content: center;
+}
+
+/* right column is container for Contact Me box */
+.right-column {display: grid;}
+
+/* Here is the styling for the header- present at the top of every page */
+header {
+  margin-top: 30px;
+  height: 25vh;
+  display: grid;
+  grid-template-rows: 20vh 5vh;
+}
+.logo-container {
+  /* border: 2px solid black; */
+  width: 80%;
+  height: 100%;
+  place-self: center;
+  text-align: center;
+  background-color: var(--dark-sectionBlurb-bg);
+  border-radius: 20px;
+}
+
+h3 {
+  background-color: var(--dark-sectionBlurb-bg);
+  color:var(--dark-text-color);
+  font-size: 18pt
+}
+
+.logo-top {
+  font-size: 36pt;
+}
+
+.logo-dividing-bar {
+  background-color: var(--dark-text-color);
+  height: 5px;
+  border-radius: 2px;
+}
+
+.logo-bottom {
+  font-size: 20pt;
+}
+
+.header-logo {}
+.header-links-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  place-content: center;
+  background-color: var(--dark-sectionBlurb-bg);
+  border-radius: 8px;
+  width: 80%;
+  margin-left: 10%;
+}
+.header-link {}
+
+/* body-container is the div containing the swapping content in the page body */
+
+
+.body-container {
+  grid-area: body;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 25px;
+  margin-top: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  /* background-color: var(--dark-bg); */
+}
+
+
+.page-header-container {
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.body-section {
+  border-radius: 20px;
+  display: grid;
+  gap: 25px;
+  /* background-color: var(--dark-bodySection-bg); */
+  border-color: var(--dark-border);
+  color: var(--dark-text-color);
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* border-radius: 20px; */
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+.body-section-content-container:first-child {
+  border-radius: 20px;  
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.body-blurb {
+  background-color: var(--dark-sectionBlurb-bg);
+  border-radius: 8px;
+  
+  padding: 20px;  
+}
+
+.body-blurb > .section-text {
+  
+}
+
+
+
+.body-blurb > img {
+  max-height: 300px; 
+  max-width: 30%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.body-blurb > img.right-image {
+  float: right;
+  margin-left: 20px;
+}
+
+.body-blurb > img.left-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.body-blurb > h4 {
+  text-align: center;
+}
+
+
+footer {
+  
+}
+
+.contact-panel {
+  background-color: var(--dark-contact-bg);
+  margin-top: 20vh;
+  margin-left: 2vw;
+  width: 15vw;
+  height: 40vh;
+  position: fixed;
+}
+
+.quote {
+  background-color: white;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+a{
+  color: var(--link-color);
+}
+
+.contact-panel {
+  text-align: center;
+}
+
+.contact-panel > li {
+
+}
+
+.book-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  place-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-block > div {
+  max-width: 30%;
+  min-width: 20%;
+}
+
+.book-block > div > img {
+  width: 30%;
+}
