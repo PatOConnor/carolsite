@@ -1,0 +1,24 @@
+.contact-panel {
+    /* background-color: var(--dark-contact-bg); */
+    background-color: var(--dark-sectionBlurb-bg);
+    margin-top: 20vh;
+    position: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    padding: 15px;
+    gap: 8px;
+  
+  }
+
+  .contact-image {
+    width: 15vw;
+    border-radius: 15px;
+  }
+  
+  .contact-header {
+    align-self: center;
+    font-size: 16pt;
+  }

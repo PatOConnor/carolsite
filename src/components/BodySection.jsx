@@ -3,20 +3,43 @@
 
 import blurbsToContent from "../functions/blurbsToContent";
 
-const BodySection = ({sectionID, animationType, sectionTitle, sectionContent}) => {
-    let cssClass = 'body-section '+animationType
-    
+
+// todo: add image data prop
+const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, imageLayout, imageData }) => {
+    let cssClass = 'body-section ' + animationType
+
     const sectionTitleHTML = sectionTitle === "" ? "" : <h4>{sectionTitle}</h4>
 
-    
-    return (
-        <div id={sectionID} className={cssClass}>
+    if (imageData === undefined) {
+        imageData = null;
+    }
+    const imageHTML = imageData === null ? "" : <img className={imageData.imageStyle} src={imageData.imageSrc} alt={imageData.imageAlt} />
+
+
+    let content = ''
+    if (imageLayout === "right-image") {
+        console.log("GFUIYWFRTIOBUYWERFIUSEYRIFUYSENRHIFGOUESRYNGOSER")
+        content = <div id={sectionID} className={cssClass}>
             {/* sectiontitleHTML is wither a subheader or blank */}
-            {sectionTitleHTML}
             <div className="body-section-content-container">
+                {sectionTitleHTML}
+                {sectionContent}
+            </div>
+            {imageHTML}
+        </div>
+    } else {
+        content = <div id={sectionID} className={cssClass}>
+            {/* sectiontitleHTML is wither a subheader or blank */}
+            {imageHTML}
+            <div className="body-section-content-container">
+                {sectionTitleHTML}
                 {sectionContent}
             </div>
         </div>
-    );
+    }
+
+    
+
+    return (content);
 }
 export default BodySection

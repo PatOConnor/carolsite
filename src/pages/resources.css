@@ -1,0 +1,21 @@
+
+
+
+.book-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .book-block > div {
+    max-width: 30%;
+    min-width: 20%;
+  }
+  
+  .book-block > div > img {
+    width: 30%;
+  }
+  

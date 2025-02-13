@@ -4,10 +4,12 @@ import blurbsToContent from "../functions/blurbsToContent";
 const Main = () => {
     const sectionOneBlurbs = [
         {
-            image: {
-                imageID: "carolpic1",
-                imageSrc: "./img/carol1.bmp", imageAlt: "Picture of Carol", imageStyle: "right-image",
-            },
+            // TODO: update image here
+
+            // image: {
+            //     imageID: "carolpic1",
+            //     imageSrc: "./img/carol1.bmp", imageAlt: "Picture of Carol", imageStyle: "right-image",
+            // },
             text: "I am a licensed psychologist, providing teletherapy and in person sessions for adults in Portland, Oregon.  Teletherapy sessions available for New Jersey and New York residents."
         },
         {
@@ -21,10 +23,7 @@ const Main = () => {
             text: "I offer treatment that integrates various innovative, effective approaches; Somatic Experiencing, EMDR, Internal Family Systems theory and Mindfulness practices that organically and successfully allow change to happen.  I SPECIALIZE IN SUPPORTING CLIENTS TO ADDRESS CHILDHOOD/DEVELOPMENTAL TRAUMA, to BUILD HEALTHY RELATIONSHIPS and alleviate anxiety and depression."
         },
         {
-            image: {
-                imageID: "creek",
-                imageSrc: "./img/creek.bmp", imageAlt:"Creek in Willamette Valley", imageStyle: "left-image"
-            },
+           
             text: "We will tailor these approaches to respond to you and your situation. Everyone has inner resources that can help them to heal.  Working together, we will begin by understanding who you are, how your experiences in life have affected you and most importantly, how these experiences are remembered inside you.   Providing a body-based foundation allows for a more meaningful process of internal growth and best supports our capacity for resiliency.  This approach can lead to greater vitality and more permanent outcomes. We are using tools that are innovative yet clinically sound and safe.   I believe that every individual possesses compassion, creativity, curiosity, and courage to bring about positive change in their life.  I am here to support you in feeling comfortable bringing your true self to therapy."
         }
 
@@ -47,6 +46,19 @@ const Main = () => {
 
     ]
 
+    const creekImage = {
+        imageID: "creek",
+        imageSrc: "./img/creek.bmp", 
+        imageAlt:"Creek in Willamette Valley", 
+        imageStyle: ""
+    }
+
+    const horsesImage = {
+        imageID: "horses",
+        imageSrc: './img/horses.avif',
+        imageAlt: "horses",
+        imageStyle: "",
+    }
 
     const sectionOneJSX = blurbsToContent({ blurbData: sectionOneBlurbs });
     const sectionTwoJSX = blurbsToContent({ blurbData: sectionTwoBlurbs });
@@ -59,12 +71,16 @@ const Main = () => {
             animationType={"fade-in"}
             sectionTitle={""}
             sectionContent={sectionOneJSX}
-        />
+            imageLayout={"right-image"}
+            imageData={horsesImage}
+            />
         <BodySection
             sectionID={"main-section-2"}
             animationType={"fade-in"}
             sectionTitle={""}
             sectionContent={sectionTwoJSX}
+            imageLayout={"left-image"}
+            imageData={creekImage}
             />
         <div id="quote1" className="body-section quote">
             <p>“Trauma is not what happens to us. But what we hold inside in the absence of an empathetic witness.” — Dr Peter Levine</p>

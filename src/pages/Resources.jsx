@@ -1,6 +1,7 @@
 import SectionBlurb from "../components/SectionBlurb";
 import BookPanel from "../components/BookPanel";
 import PageTitle from "../components/PageTitle";
+import './resources.css';
 const Resources = () => {
     return (<>
         <PageTitle text="Resources"/>

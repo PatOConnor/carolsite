@@ -1,0 +1,51 @@
+/* Here is the styling for the header- present at the top of every page */
+header {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 15vh 5vh;
+  }
+  .logo-container {
+    /* border: 2px solid black; */
+    padding-top: 20px;
+    width: 80%;
+    height: 80%;
+    place-self: center;
+    text-align: center;
+    background-color: var(--dark-sectionBlurb-bg);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+  }
+  
+  
+  .logo-top {
+    font-size: 36pt;
+  }
+  
+  .logo-dividing-bar {
+    background-color: var(--dark-text-color);
+    height: 2px;
+    margin-left: 20%;
+    width: 60%;
+    border-radius: 2px;
+  }
+  
+  .logo-bottom {
+    font-size: 20pt;
+  }
+  
+  .header-logo {}
+  .header-links-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    place-content: center;
+    background-color: var(--dark-sectionBlurb-bg);
+    border-radius: 8px;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 5px;
+  }
+  .header-link {}
