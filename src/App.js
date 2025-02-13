@@ -30,12 +30,12 @@ function App() {
 
   return (<>
     <div className="App">
-      <div className='left-column'></div>
-      <div className='middle-column'>
+
         <Router>
 
 
           <Header />
+          <Contact />
           <div className='body-container'>
             <Routes>
               <Route path="/" element={<Main />} />
@@ -51,10 +51,7 @@ function App() {
           <Footer />
 
         </Router>
-      </div>
-      <div className='right-column'>
-        <Contact />
-      </div>
+
     </div>
   </>
   );

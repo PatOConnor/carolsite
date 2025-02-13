@@ -2,7 +2,7 @@
 header {
     margin-top: 20px;
     display: grid;
-    grid-template-rows: 15vh 5vh;
+    grid-template-rows: 20vh 5vh;
   }
   .logo-container {
     /* border: 2px solid black; */
@@ -21,7 +21,7 @@ header {
   
   
   .logo-top {
-    font-size: 36pt;
+    font-size: 32pt;
   }
   
   .logo-dividing-bar {

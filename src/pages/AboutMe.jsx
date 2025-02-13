@@ -15,28 +15,13 @@ const AboutMe = () => {
                 imageStyle: null
             },
             header: "How I Work",
-            text: "I have many years of experience, over 30 years of growing and evolving in my work. I have a Ph.D. in psychology, and am licensed in Oregon, New Jersey and New York. Early in my career I trained as a Relational Psychoanalytic Psychotherapist and I continue to appreciate the insights and experience that are still relevant.  My work took an important turn in my training in Somatic Experiencing, and IFS.  I have found that integrating these models has provided profound and effective, organic change in those I work with.",
-        },
-        {
-            image: {
-                imageID: "",
-                imageSrc: null,
-                imageAlt: null,
-                imageStyle: null
-            },
-            header: "",
-            text: "These modalities support clients to process traumatic events both “big T traumas” often single events and “little t traumas” ongoing difficulties often in childhood in which for whatever reason we did not get our needs met.",
-        },
-        {
-            image: {
-                imageID: "",
-                imageSrc: null,
-                imageAlt: null,
-                imageStyle: null
-            },
-            header: "",
-            //this one is in JSX to contain the bold text at the end of the sentence.
-            text: <>In addition to private practice, I have previous experience working children, adolescents, adults, and couples with diverse racial, socioeconomic, gender identity, and sexual orientations. Although my current practice is <strong>limited to adults only.</strong></>,
+            text: <>I have many years of experience, over 30 years of growing and evolving in my work. I have a Ph.D. in psychology, and am licensed in Oregon, New Jersey and New York. Early in my career I trained as a Relational Psychoanalytic Psychotherapist and I continue to appreciate the insights and experience that are still relevant.  My work took an important turn in my training in Somatic Experiencing, and IFS.  I have found that integrating these models has provided profound and effective, organic change in those I work with. 
+            <br />
+            <br />
+            These modalities support clients to process traumatic events both “big T traumas” often single events and “little t traumas” ongoing difficulties often in childhood in which for whatever reason we did not get our needs met.
+            <br />
+            <br />
+            In addition to private practice, I have previous experience working children, adolescents, adults, and couples with diverse racial, socioeconomic, gender identity, and sexual orientations. Although my current practice is <strong>limited to adults only.</strong></>
         },
     ]
 
