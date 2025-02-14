@@ -1,5 +1,5 @@
  //import logo image
-import './header.css';
+
 import { Link } from "react-router";
 
  const Header = () => {
@@ -18,7 +18,7 @@ import { Link } from "react-router";
             <div className="logo-container">
                 <div className="logo-top">Carol Marcus</div>
                 <div className="logo-dividing-bar"></div>
-                <div className="logo-bottom">Therapy | Somatic Experiencing | Consultation</div>
+                <div className="logo-bottom">Therapy | Somatic Experiencing </div>
             </div>
             <div className="header-links-container">
                 {links.map(linkData => <Link to={linkData.linkUrl}>{linkData.text}</Link>)}
