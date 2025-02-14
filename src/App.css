@@ -105,6 +105,7 @@ h3 {
 
   display: flex;
   flex-direction: column;
+  gap: 8px;
   
   text-align: center;
 }
@@ -120,7 +121,7 @@ h3 {
 
 .body-section > img {
   max-height: 300px;
-  /* max-width: 30%; */
+  max-width: 30%;
   object-fit: contain;
   border-radius: 8px;
 }
@@ -132,10 +133,6 @@ h3 {
 
 /* body-container is the div containing the swapping content in the page body */
 .body-container {
-  grid-area: body;
-  /* display: grid; */
-  /* grid-auto-flow: row; */
-
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -172,9 +169,23 @@ h3 {
   
 }
 
+.credentials {
+  background-color: var(--dark-sectionBlurb-bg);
+  text-align: left;
+  min-width: 18vw;
+  align-items: center;
+}
+.credentials > ul {
+  margin: 0px;
+}
+.credentials > ul > li{
+  list-style-type: square;
+}
+
 
 .page-header {
-  margin-left: 10%;
+  
+  align-self:center;
   margin-top: 1px;
   width: 80%;
   border-radius: 8px;
@@ -204,6 +215,7 @@ h3 {
 .horizontal-layout {
   flex-direction: row;
   /* flex-wrap: wrap; */
+  gap: 4px;
 }
 
 .vertical-layout {

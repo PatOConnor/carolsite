@@ -14,6 +14,7 @@ const Supervision = () => {
         animationType={"fade-in"}
         sectionTitle={""}
         sectionContent={supervisionJSX}
+        direction={"flex horizontal-layout"}
     />
     </>)
 }

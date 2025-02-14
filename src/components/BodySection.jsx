@@ -10,7 +10,8 @@ const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, i
         direction = '';
     }
     
-    let cssClass = 'body-section ' + animationType + ' '
+    console.log(direction)
+    let cssClass = 'body-section ' + animationType
 
     const sectionTitleHTML = sectionTitle === "" ? "" : <h4>{sectionTitle}</h4>
 
@@ -25,7 +26,7 @@ const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, i
         // console.log("GFUIYWFRTIOBUYWERFIUSEYRIFUYSENRHIFGOUESRYNGOSER")
         content = <div id={sectionID} className={cssClass}>
             {/* sectiontitleHTML is wither a subheader or blank */}
-            <div className={"body-section-content-container"}>
+            <div className={"body-section-content-container " + direction}>
                 {sectionTitleHTML}
                 {sectionContent}
             </div>
@@ -35,7 +36,7 @@ const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, i
         content = <div id={sectionID} className={cssClass}>
             {/* sectiontitleHTML is wither a subheader or blank */}
             {imageHTML}
-            <div className="body-section-content-container">
+            <div className={"body-section-content-container " + direction}>
                 {sectionTitleHTML}
                 {sectionContent}
             </div>

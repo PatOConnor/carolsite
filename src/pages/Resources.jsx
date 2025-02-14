@@ -3,12 +3,8 @@ import BookPanel from "../components/BookPanel";
 import PageTitle from "../components/PageTitle";
 import './resources.css';
 const Resources = () => {
-    return (<>
-        <PageTitle text="Resources"/>
-        <div className="body-section">
-            <SectionBlurb headerText={"Somatic Experiencing® Website"} bodyText={<>The <a href="https://traumahealing.org/resources/">Somatic Experiencing® Website</a> has a wealth of resources to read, listen or view.</>}/>
-        </div>
-        <div className="book-block">
+
+    const bookBlock = <div className="book-block">
 
         <BookPanel
             bookTitle={"Trauma-Proofing Your Kids: A Parents’ Guide for Instilling Confidence, Joy and Resilience"}
@@ -21,8 +17,8 @@ const Resources = () => {
             amazonLink={"https://www.amazon.com/Crash-Course-Self-Healing-Accident-Recovery/dp/1556433727"}
             author={"Diane Poole Heller, Ph.D."}
             imgSrc={"https://m.media-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif"}
-            // blurb={"An excellent self-help book on the use of Somatic Experiencing therapy in recovering from trauma caused \nby an automobile accident"} 
-            />
+        // blurb={"An excellent self-help book on the use of Somatic Experiencing therapy in recovering from trauma caused \nby an automobile accident"} 
+        />
         <BookPanel
             bookTitle={"Wherever You Go, There You Are: Mindfulness Meditation in Everyday Life"}
             amazonLink={"https://www.amazon.com/Wherever-You-There-Are-Mindfulness/dp/1401307787"}
@@ -53,7 +49,24 @@ const Resources = () => {
             author={"Jon Kabat-Zinn"}
             imgSrc={"https://m.media-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif"}
             blurb={""} />
-            </div>
+    </div>
+
+    return (<>
+        <PageTitle text="Resources" />
+
+
+        <div className="body-section flex vertical-layout">
+
+
+            <PageTitle text="Online" />
+            <SectionBlurb headerText={"Somatic Experiencing® Website"} bodyText={<>The <a href="https://traumahealing.org/resources/">Somatic Experiencing® Website</a> has a wealth of resources to read, listen or view.</>} />
+            <PageTitle text="Literature" />
+
+            {bookBlock}
+
+
+
+        </div>
     </>
 
     );

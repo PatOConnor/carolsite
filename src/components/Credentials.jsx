@@ -1,6 +1,8 @@
 const Credentials = () => {
     return (<>
-        <div className="body-section listBlock">
+        <div className="body-section credentials flex vertical-layout">
+            <h4>Credentials and Training</h4>
+            
             <ul>
                 <li>Ph.D. Yeshiva University</li>
                 <li>Postdoctoral Program in Psychotherapy & Psychoanalysis, New York University</li>
@@ -9,12 +11,10 @@ const Credentials = () => {
                 <li>EMDR</li>
                 <li>Internal Family Systems</li>
             </ul>
-        </div>
-        <div className="body-section listBlock">
-            <ul>
+            {/* <ul>
                 <li>Oregon License Number: 3536</li>
                 <li>New Jersey License Number: 35SI00395700</li>
-            </ul>
+            </ul> */}
         </div>
 
     </>

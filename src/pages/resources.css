@@ -5,14 +5,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    place-content: center;
+    place-content: space-between;
     align-items: center;
     gap: 8px;
   }
   
   .book-block > div {
-    max-width: 30%;
-    min-width: 20%;
+    width: 40%;
   }
   
   .book-block > div > img {
