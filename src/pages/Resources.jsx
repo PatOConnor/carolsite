@@ -52,13 +52,13 @@ const Resources = () => {
     </div>
 
     return (<>
-        <PageTitle text="Resources" />
+        {/* <PageTitle text="Resources" /> */}
 
 
         <div className="body-section flex vertical-layout">
 
 
-            <PageTitle text="Online" />
+            <PageTitle text="Online Resources" />
             <SectionBlurb headerText={"Somatic Experiencing® Website"} bodyText={<>The <a href="https://traumahealing.org/resources/">Somatic Experiencing® Website</a> has a wealth of resources to read, listen or view.</>} />
             <PageTitle text="Literature" />
 
