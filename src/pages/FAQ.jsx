@@ -16,7 +16,8 @@ const FAQ = () => {
         sectionID={"faq-section"}
         animationType={"fade-in"}
         sectionTitle={""}
-        sectionContent={faqJSX}/>
+        sectionContent={faqJSX}
+        direction={"flex horizontal-layout"}/>
     </>)
 }
 

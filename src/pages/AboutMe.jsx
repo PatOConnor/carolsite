@@ -35,17 +35,17 @@ const AboutMe = () => {
             sectionTitle={""}
             sectionContent={aboutMeJSX}
         />
+        <Credentials/>
         <div id="quote2" className="body-section quote">
             <p>“The body is designed to renew itself through continuous self-correction.  These same principles also apply to the healing of psyche, spirit, and soul.”  - Dr. Peter Levine
             </p>
         </div>
-        <Credentials/>
-        <div id="quote3" className="body-section quote">
+        {/* <div id="quote3" className="body-section quote">
             <p>
                 “We're all just walking each other home.”
                 —Ram Dass
             </p>
-        </div>
+        </div> */}
     </>
     )
 }

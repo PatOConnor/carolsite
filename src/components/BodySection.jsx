@@ -5,8 +5,12 @@ import blurbsToContent from "../functions/blurbsToContent";
 
 
 // todo: add image data prop
-const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, imageLayout, imageData }) => {
-    let cssClass = 'body-section ' + animationType
+const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, imageLayout, imageData, direction }) => {
+    if (direction === undefined ) {
+        direction = '';
+    }
+    
+    let cssClass = 'body-section ' + animationType + ' '
 
     const sectionTitleHTML = sectionTitle === "" ? "" : <h4>{sectionTitle}</h4>
 
@@ -18,10 +22,10 @@ const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, i
 
     let content = ''
     if (imageLayout === "right-image") {
-        console.log("GFUIYWFRTIOBUYWERFIUSEYRIFUYSENRHIFGOUESRYNGOSER")
+        // console.log("GFUIYWFRTIOBUYWERFIUSEYRIFUYSENRHIFGOUESRYNGOSER")
         content = <div id={sectionID} className={cssClass}>
             {/* sectiontitleHTML is wither a subheader or blank */}
-            <div className="body-section-content-container">
+            <div className={"body-section-content-container"}>
                 {sectionTitleHTML}
                 {sectionContent}
             </div>

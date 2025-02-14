@@ -140,12 +140,15 @@ h3 {
   flex-direction: column;
   border-radius: 20px;
   overflow: scroll;
-  gap: 8px
+  gap: 8px;
+  
 }
 
 .body-section {
   border-radius: 20px;
   display: flex;
+  flex-direction: row;
+
   
   color: var(--dark-text-color);
   padding: 20px;
@@ -194,3 +197,15 @@ h3 {
 }
 
 
+.flex {
+  display: flex;
+}
+
+.horizontal-layout {
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.vertical-layout {
+flex-direction: column;
+}
