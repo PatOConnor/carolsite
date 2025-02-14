@@ -35,7 +35,6 @@ function App() {
 
 
           <Header />
-          <Contact />
           <div className='body-container'>
             <Routes>
               <Route path="/" element={<Main />} />
@@ -48,7 +47,8 @@ function App() {
 
 
           </div>
-          <Footer />
+          <Contact />
+          
 
         </Router>
 

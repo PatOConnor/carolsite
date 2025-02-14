@@ -39,7 +39,7 @@ const AboutMe = () => {
             />
         <Credentials/>
             </div>
-        <div id="quote2" className="body-section quote">
+        <div id="quote2" className="quote body-section">
             <p>“The body is designed to renew itself through continuous self-correction.  These same principles also apply to the healing of psyche, spirit, and soul.”  - Dr. Peter Levine
             </p>
         </div>
