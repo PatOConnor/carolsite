@@ -16,11 +16,11 @@ import { Link } from "react-router";
     return (
         <header>
             <div className="logo-container">
-                <div className="logo-top">Carol Marcus</div>
+                <div className="logo-top">Carol S. Marcus, Ph.D</div>
                 <div className="logo-dividing-bar"></div>
-                <div className="logo-bottom">Therapy | Somatic Experiencing </div>
+                <div className="logo-bottom">Therapy | Somatic Experiencing | Consultation</div>
             </div>
-            <div className="header-links-container">
+            <div className="header-links-container wrap">
                 {links.map(linkData => <Link to={linkData.linkUrl}>{linkData.text}</Link>)}
             </div>
         </header>

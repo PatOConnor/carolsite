@@ -45,21 +45,21 @@ const Main = () => {
 
     const creekImage = {
         imageID: "creek",
-        imageSrc: "./img/creek.bmp", 
+        imageSrc: "./carolsite/img/creek.bmp", 
         imageAlt:"Creek in Willamette Valley", 
         imageStyle: ""
     }
 
     const horsesImage = {
         imageID: "horses",
-        imageSrc: './img/horses.avif',
+        imageSrc: './carolsite/img/horses.avif',
         imageAlt: "horses",
         imageStyle: "",
     }
 
     const carolImage = {
         imageID: "carol1",
-        imageSrc: './img/carol1.bmp',
+        imageSrc: './carolsite/img/carol1.bmp',
         imageAlt: "picture of carol",
         imageStyle: 'contact-image'
     }

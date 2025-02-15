@@ -123,10 +123,12 @@
   
   .horizontal-layout {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-items: center;
   }
-  
+
+  .wrap {
+  flex-wrap: wrap;
+  }
+
   .vertical-layout {
   flex-direction: column;
   }
@@ -292,8 +294,8 @@ font-size: 1.3em;
 }
 
 .body-section-content-container{
-  display:flex;
-  flex-direction: column;
+  /* display:flex; */
+  /* flex-direction: column; */
   gap: 8px;
   
 }
@@ -348,9 +350,7 @@ font-size: 1.3em;
     
   }
 
-  .body-section {
-    flex-direction: row;
-  }
+
 
   .body-section > img {
     /* max-height: 500px; */
@@ -368,15 +368,13 @@ font-size: 1.3em;
     
     display: flex;
     
-    margin-top: 20vh;
-    position: absolute;
-    
-    
+    /* margin-top: 20vh;
+    position: absolute;    
     left: 80vw;
     top: -16vh;
     width: 14vw;
+    flex-direction: column; */
 
-    flex-direction: column;
   }
 
   .contact-image {

@@ -11,7 +11,7 @@ const TreatmentModels = () => {
                     —Bessel A. ven der Kolk
                 </p>
             </div>
-            
+            {/* This structuring gives a 2 column layout */}
             <div className="flex horizontal-layout">
                 <div className="body-section">
                     <SectionBlurb headerText="Somatic Experiencing (SE):" bodyText="A growing number of therapies understand that fundamental change sometimes occurs in a more experiential, non-verbal manner. We now have a growing understanding of the way our bodies and not just our minds process and store difficult or overwhelming experiences. Working to increase awareness of stuck or habitual ways of responding can free some of these areas of difficulty or rigidity or can bring more stability to someone who often experiences states of overwhelm and chaos or, conversely, states of dissociation and freeze. " />
