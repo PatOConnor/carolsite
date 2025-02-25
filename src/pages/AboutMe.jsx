@@ -29,7 +29,7 @@ const AboutMe = () => {
 
     return (<>
         <PageTitle text="About Me"/>
-        <div className="flex horizontal-layout">
+        <div className="flex flexible-layout">
 
         <BodySection 
             sectionID={"about-me-1"}
