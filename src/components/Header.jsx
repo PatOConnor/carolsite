@@ -15,11 +15,11 @@ import { Link } from "react-router";
 
         // PRODUCTION LINKS
         {text: "Home", linkUrl: "/carolsite/"},
-        {text: "About Me", linkUrl: "carolsite/about"},
-        {text: "Treatment Models", linkUrl: "carolsite/treatment"},
-        {text: "FAQ", linkUrl: "carolsite/faq"},
+        {text: "About Me", linkUrl: "/carolsite/about"},
+        {text: "Treatment Models", linkUrl: "/carolsite/treatment"},
+        {text: "FAQ", linkUrl: "/carolsite/faq"},
         // {text: "Supervision/Consultation", linkUrl: "supervision"},
-        {text: "Resources", linkUrl: "carolsite/resources"},
+        {text: "Resources", linkUrl: "/carolsite/resources"},
     ]
 
     return (
