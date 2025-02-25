@@ -35,15 +35,21 @@ function App() {
           <Header />
           <div className='body-container'>
             <Routes>
-              <Route path="/" element={<Main />} />
+              {/* <Route path="/" element={<Main />} />
               <Route path="/about" element={<AboutMe />} />
               <Route path="/treatment" element={<TreatmentModels />} />
               {/* <Route path="/supervision" element={<Supervision />} /> */}
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/resources" element={<Resources />} />
+              {/* <Route path="/faq" element={<FAQ />} /> */}
+              {/* <Route path="/resources" element={<Resources />} /> */}
+
+              <Route path="/carolsite/" element={<Main />} />
+              <Route path="/carolsite/about" element={<AboutMe />} />
+              <Route path="/carolsite/treatment" element={<TreatmentModels />} />
+              {/* <Route path="/supervision" element={<Supervision />} /> */}
+              <Route path="/carolsite/faq" element={<FAQ />} />
+              <Route path="/carolsite/resources" element={<Resources />} />
+
             </Routes>
-
-
           </div>
           <Contact />
           

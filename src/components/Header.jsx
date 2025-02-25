@@ -4,7 +4,16 @@ import { Link } from "react-router";
 
  const Header = () => {
 
-    const links = [
+    const links = [        
+        // // TESTING LINKS
+        // {text: "Home", linkUrl: "/"},
+        // {text: "About Me", linkUrl: "/about"},
+        // {text: "Treatment Models", linkUrl: "/treatment"},
+        // {text: "FAQ", linkUrl: "/faq"},
+        // // {text: "Supervision/Consultation", linkUrl: "supervision"},
+        // {text: "Resources", linkUrl: "/resources"},
+
+        // PRODUCTION LINKS
         {text: "Home", linkUrl: "/carolsite/"},
         {text: "About Me", linkUrl: "carolsite/about"},
         {text: "Treatment Models", linkUrl: "carolsite/treatment"},
