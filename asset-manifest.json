@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/carolsite/static/css/main.1504217b.css",
+    "main.css": "/carolsite/static/css/main.7049b220.css",
     "main.js": "/carolsite/static/js/main.8cd895f4.js",
     "static/media/Comfortaa-VariableFont_wght.ttf": "/carolsite/static/media/Comfortaa-VariableFont_wght.7b8c952927af2b0deacd.ttf",
     "static/media/flowers.avif": "/carolsite/static/media/flowers.7e3e974054b99fe4a001.avif",
     "static/media/Overlock-Black.ttf": "/carolsite/static/media/Overlock-Black.52a71d7e1cd597141d34.ttf",
     "index.html": "/carolsite/index.html",
-    "main.1504217b.css.map": "/carolsite/static/css/main.1504217b.css.map",
+    "main.7049b220.css.map": "/carolsite/static/css/main.7049b220.css.map",
     "main.8cd895f4.js.map": "/carolsite/static/js/main.8cd895f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.1504217b.css",
+    "static/css/main.7049b220.css",
     "static/js/main.8cd895f4.js"
   ]
 }
