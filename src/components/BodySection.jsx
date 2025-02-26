@@ -26,7 +26,7 @@ const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, i
         // console.log("GFUIYWFRTIOBUYWERFIUSEYRIFUYSENRHIFGOUESRYNGOSER")
         content = <div id={sectionID} className={cssClass}>
             {/* sectiontitleHTML is wither a subheader or blank */}
-            <div className={"body-section-content-container " + direction}>
+            <div className={"body-section-content-container" + direction}>
                 {sectionTitleHTML}
                 {sectionContent}
             </div>

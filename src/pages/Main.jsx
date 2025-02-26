@@ -59,6 +59,7 @@ const Main = () => {
 
     const carolImage = {
         imageID: "carol1",
+        // imageSrc: './img/carol1.bmp',
         imageSrc: './img/carol1.bmp',
         imageAlt: "picture of carol",
         imageStyle: 'contact-image'
@@ -78,6 +79,7 @@ const Main = () => {
             sectionContent={sectionOneJSX}
             imageLayout={"right-image"}
             imageData={carolImage}
+            direction={"vertical-layout"}
             />
         <BodySection
             sectionID={"main-section-2"}
