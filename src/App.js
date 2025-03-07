@@ -24,6 +24,10 @@ import Supervision from './pages/Supervision';
 import FAQ from './pages/FAQ';
 import Resources from './pages/Resources';
 
+
+import ScrollToTop from './functions/scrollToTop';
+import ContactMe from './pages/ContactMe';
+
 function App() {
 
   return (<>
@@ -34,6 +38,8 @@ function App() {
 
           <Header />
           <div className='body-container'>
+        
+              
             <Routes>
               {/* <Route path="/" element={<Main />} />
               <Route path="/about" element={<AboutMe />} />
@@ -44,12 +50,14 @@ function App() {
               <Route path="/carolsite/" element={<Main />} />
               <Route path="/carolsite/about" element={<AboutMe />} />
               <Route path="/carolsite/treatment" element={<TreatmentModels />} />
+              <Route path="/carolsite/supervision" element={<Supervision />} />
               <Route path="/carolsite/faq" element={<FAQ />} />
               <Route path="/carolsite/resources" element={<Resources />} />
+              <Route path="/carolsite/contact" element={<ContactMe/>} />
 
             </Routes>
+              
           </div>
-          <Contact />
           
 
         </Router>

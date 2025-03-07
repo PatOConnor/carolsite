@@ -17,9 +17,10 @@ import { Link } from "react-router";
         {text: "Home", linkUrl: "/carolsite/"},
         {text: "About Me", linkUrl: "/carolsite/about"},
         {text: "Treatment Models", linkUrl: "/carolsite/treatment"},
-        {text: "FAQ", linkUrl: "/carolsite/faq"},
-        // {text: "Supervision/Consultation", linkUrl: "supervision"},
+        {text: "Supervision", linkUrl: "/carolsite/supervision"},
         {text: "Resources", linkUrl: "/carolsite/resources"},
+        {text: "FAQ", linkUrl: "/carolsite/faq"},
+        {text: "Contact Me", linkUrl: "/carolsite/contact"}
     ]
 
     return (
@@ -27,7 +28,7 @@ import { Link } from "react-router";
             <div className="logo-container">
                 <div className="logo-top">Carol S. Marcus, Ph.D</div>
                 <div className="logo-dividing-bar"></div>
-                <div className="logo-bottom">Therapy | Somatic Experiencing</div>
+                <div className="logo-bottom">Therapy | Somatic Experiencing | Supervision</div>
             </div>
             <div className="header-links-container wrap">
                 {links.map(linkData => <Link to={linkData.linkUrl}>{linkData.text}</Link>)}

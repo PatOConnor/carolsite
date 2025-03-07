@@ -300,6 +300,10 @@ font-size: 1.3em;
   
 }
 
+.body-section-content-container:first-child{
+  
+}
+
 .credentials {
   background-color: var(--dark-sectionBlurb-bg);
   text-align: left;
@@ -349,14 +353,20 @@ font-size: 1.3em;
   .App {
     margin-left: 12vw;
     width: 76vw;
-    
+    height: 100vh;
   }
   
   .flexible-layout {
     flex-direction: row;
   }
   
-  
+  .two-column > div {
+    width: 45%;
+  }
+
+  .three-column > div {
+    width: 33%;
+  }
   
   .body-section > img {
     /* max-height: 500px; */
@@ -385,7 +395,6 @@ font-size: 1.3em;
   
   .body-section-content-container{
     display:flex;
-    flex-direction: row;
     gap: 8px;
     
   }

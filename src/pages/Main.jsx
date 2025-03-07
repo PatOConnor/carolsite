@@ -10,11 +10,11 @@ const Main = () => {
             //     imageID: "carolpic1",
             //     imageSrc: "./img/carol1.bmp", imageAlt: "Picture of Carol", imageStyle: "right-image",
             // },
-            header: "Welcome to My Practice!",
-            text: "I am a licensed psychologist, providing in person sessions for adults in Portland, Oregon, as well as teletherapy sessions for residents of Oregon, New Jersey, and New York. I specialize in addressing childhood/developmental trauma to alleviate anxiety and depression and buildd healthy relationships."
-        },
-        {
-            text: "Traditional \"talk\" therapy is one way to address problems, but for some people it is not enough.  Many people feel that while they have learned much about themselves, they still feel the same and struggle with the same problems. I offer treatment that integrates various innovative, effective approaches; Somatic Experiencing, EMDR, Internal Family Systems theory and Mindfulness practices that organically and successfully allow change to happen."
+            header: "Welcome to My Practice",
+            text: <>
+                    <p>I am a licensed psychologist, providing in person sessions for adults in Portland, Oregon, as well as teletherapy sessions for residents of Oregon, New Jersey, and New York. I specialize in addressing childhood/developmental trauma to alleviate anxiety and depression and build healthy relationships.</p>
+                    <p>Traditional "talk" therapy is one way to address problems, but for some people it is not enough.  Many people feel that while they have learned much about themselves, they still feel the same and struggle with the same problems. I offer treatment that integrates various innovative, effective approaches; Somatic Experiencing, EMDR, Internal Family Systems theory and Mindfulness practices that organically and successfully allow change to happen.</p>
+                </>
         },
 
     ]
@@ -27,13 +27,7 @@ const Main = () => {
         }
 
     ]
-    const sectionThreeBlurbs = [
-        {
-            header: "Experiencing therapy with me:",
-            text: "I frequently make sure we are \"on the same page\" when it comes to use of language, ideas, and concepts.  I am always checking in and evaluating your understanding regarding your needs, feelings, and goals.  You will understand where you are, how you got there, and where you want to go. Resilience involves building capacity to hold difficulty and challenge without letting it overwhelm us.  In therapy you will experience how to metabolize and grow from these experiences, how to choose your responses to situations so you can respond rather than react."
-        },
 
-    ]
 
     const sectionFourBlurbs = [
         {
@@ -59,15 +53,15 @@ const Main = () => {
 
     const carolImage = {
         imageID: "carol1",
-        // imageSrc: './img/carol1.bmp',
-        imageSrc: './img/carol1.bmp',
+
+        imageSrc: './img/carol1.jpg',
         imageAlt: "picture of carol",
         imageStyle: 'contact-image'
     }
 
     const sectionOneJSX = blurbsToContent({ blurbData: sectionOneBlurbs });
     const sectionTwoJSX = blurbsToContent({ blurbData: sectionTwoBlurbs });
-    const sectionThreeJSX = blurbsToContent({ blurbData: sectionThreeBlurbs });
+    
     const sectionFourJSX = blurbsToContent({ blurbData: sectionFourBlurbs });
 
 
@@ -79,7 +73,7 @@ const Main = () => {
             sectionContent={sectionOneJSX}
             imageLayout={"right-image"}
             imageData={carolImage}
-            direction={"vertical-layout"}
+            direction={" vertical-layout"}
             />
         <BodySection
             sectionID={"main-section-2"}
@@ -92,14 +86,7 @@ const Main = () => {
         <div id="quote1" className="body-section quote">
             <p>“Trauma is not what happens to us. But what we hold inside in the absence of an empathetic witness.” — Dr Peter Levine</p>
         </div>
-        <BodySection
-            sectionID={"main-section-3"}
-            animationType={"fade-in"}
-            sectionTitle={""}
-            sectionContent={sectionThreeJSX}
-            imageLayout={"right-image"}
-            imageData={creekImage}
-            />
+
         <BodySection
             sectionID={"main-section-4"}
             animationType={"fade-in"}
