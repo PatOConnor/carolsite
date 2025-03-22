@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/carolsite/static/css/main.fb630052.css",
-    "main.js": "/carolsite/static/js/main.d1075b95.js",
+    "main.css": "/carolsite/static/css/main.c931c88a.css",
+    "main.js": "/carolsite/static/js/main.ed3da0b7.js",
     "static/media/Comfortaa-VariableFont_wght.ttf": "/carolsite/static/media/Comfortaa-VariableFont_wght.7b8c952927af2b0deacd.ttf",
     "static/media/flowers.avif": "/carolsite/static/media/flowers.7e3e974054b99fe4a001.avif",
     "static/media/Overlock-Black.ttf": "/carolsite/static/media/Overlock-Black.52a71d7e1cd597141d34.ttf",
     "index.html": "/carolsite/index.html",
-    "main.fb630052.css.map": "/carolsite/static/css/main.fb630052.css.map",
-    "main.d1075b95.js.map": "/carolsite/static/js/main.d1075b95.js.map"
+    "main.c931c88a.css.map": "/carolsite/static/css/main.c931c88a.css.map",
+    "main.ed3da0b7.js.map": "/carolsite/static/js/main.ed3da0b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb630052.css",
-    "static/js/main.d1075b95.js"
+    "static/css/main.c931c88a.css",
+    "static/js/main.ed3da0b7.js"
   ]
 }
