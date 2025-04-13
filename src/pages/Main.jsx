@@ -67,13 +67,14 @@ const Main = () => {
 
     return (<>
         <BodySection
-            sectionID={"main-section-1"}
-            animationType={"fade-in"}
+            sectionID={"main-section-1"} 
+            // below here is a terrible hack that gets removed on refactor
+            animationType={"fade-in flexible-layout"}
             sectionTitle={""}
             sectionContent={sectionOneJSX}
             imageLayout={"right-image"}
             imageData={carolImage}
-            direction={" vertical-layout"}
+            direction={" flexible-layout"}
             />
         <BodySection
             sectionID={"main-section-2"}
@@ -81,7 +82,8 @@ const Main = () => {
             sectionTitle={""}
             sectionContent={sectionTwoJSX}
             imageLayout={"left-image"}
-            imageData={horsesImage}
+            // imageData={horsesImage}
+            direction={" vertical-layout"}
             />
         <div id="quote1" className="body-section quote">
             <p>“Trauma is not what happens to us. But what we hold inside in the absence of an empathetic witness.” — Dr Peter Levine</p>

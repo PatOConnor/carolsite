@@ -4,17 +4,30 @@
 *                                                      *
 *******************************************************/
 
-@font-face {
-  font-family: overlock;
-  src: url('./fonts/Overlock/Overlock-Black.ttf');
-}
+:root {
 
-@font-face {
-  font-family: Comfortaa;
-  src: url('./fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
-}
+  @font-face {
+    font-family: overlock;
+    src: url('./fonts/Overlock/Overlock-Black.ttf');
+  }
+  
+  @font-face {
+    font-family: Comfortaa;
+    src: url('./fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+  }
+/* 
+  @font-face {
+    font-family: Shizuru;
+    src: url('./fonts/Shizuru/Shizuru-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: Akaya;
+    src: url('./fonts/Akaya/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf');
+  } */
+  
+  
 
-:root { 
   /* dark mode colors */
 
   /* color of the background on the sides */
@@ -37,11 +50,19 @@
 }
 
 
+
+
+
+
 /******************************************************* 
 *                                                      *
 *               ANIMATIONS                             *
 *                                                      *
 *******************************************************/
+
+
+
+
 
 
 @keyframes fadeInAnimation {
@@ -110,10 +131,7 @@
 
   .vertical-layout {
   flex-direction: column;
-  justify-content: center;
   }
-
-
 
   .quote {
     background-color: rgb(215, 179, 89);
@@ -204,7 +222,7 @@ font-size: 1.3em;
   border-radius: 8px;
   width: 80%;
   margin-left: 10%;
-  padding: 8px;
+  padding-bottom: 5px;
 }
 
 /* ************************* */
@@ -234,6 +252,16 @@ font-size: 1.3em;
   padding: 20px;
 }
 
+.body-section > img {
+  /* max-height: 500px; */
+  /* min-height: 350px; */
+  min-width: 30%;
+  max-width: 50%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
 
 .body-blurb > h4 {
   text-align: center;
@@ -252,7 +280,7 @@ font-size: 1.3em;
 .body-section {
   border-radius: 20px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 
   
   color: var(--dark-text-color);
@@ -281,23 +309,14 @@ font-size: 1.3em;
   
 }
 
-.body-section > img {
-  min-width: 30%;
-  max-width: 80%;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
 .credentials {
   background-color: var(--dark-sectionBlurb-bg);
   text-align: left;
   min-width: 18vw;
   align-items: center;
-
 }
 .credentials > ul {
   margin: 0px;
-  padding-left: 2px;
 }
 .credentials > ul > li{
   list-style-type: square;
@@ -328,32 +347,12 @@ font-size: 1.3em;
   margin-left: 12vw;
 }
 
-.very-tall-textbox {
-  height: 20em;
-}
 
-.ultrawide {
-  flex-grow: 1;
-}
-
-.rightalign {
-  align-items: end;
-}
-
-.horizontal-fill {
-  width: 100%;
-}
-
-input {
-  border-radius: 5px;
-}
 /******************************************************* 
 *                                                      *
 *              LANDSCAPE ORIENTATION CODE              *
 *                                                      *
 *******************************************************/
-
-
 @media (width > 721px) {
   /* … */
   .App {

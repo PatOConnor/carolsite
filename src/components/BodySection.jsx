@@ -18,12 +18,12 @@ const BodySection = ({ sectionID, animationType, sectionTitle, sectionContent, i
     if (imageData === undefined) {
         imageData = null;
     }
+    
     const imageHTML = imageData === null ? "" : <img className={imageData.imageStyle} src={imageData.imageSrc} alt={imageData.imageAlt} />
 
 
     let content = ''
     if (imageLayout === "right-image") {
-        // console.log("GFUIYWFRTIOBUYWERFIUSEYRIFUYSENRHIFGOUESRYNGOSER")
         content = <div id={sectionID} className={cssClass}>
             {/* sectiontitleHTML is wither a subheader or blank */}
             <div className={"body-section-content-container" + direction}>

@@ -28,7 +28,7 @@ import { Link } from "react-router";
             <div className="logo-container">
                 <div className="logo-top">Carol S. Marcus, Ph.D</div>
                 <div className="logo-dividing-bar"></div>
-                <div className="logo-bottom">Therapy | Somatic Experiencing | Supervision</div>
+                <div className="logo-bottom">Therapy | Supervision | Somatic Experiencing</div>
             </div>
             <div className="header-links-container wrap">
                 {links.map(linkData => <Link to={linkData.linkUrl}>{linkData.text}</Link>)}
