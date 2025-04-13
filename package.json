@@ -1,7 +1,7 @@
 {
   "name": "carolwebsite",
   "version": "0.1.0",
-  "homepage": "https://patoconnor.github.io/",
+  "homepage": "https://patoconnor.github.io/carolsite",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
