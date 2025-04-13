@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/carolsite/static/css/main.32c71188.css",
-    "main.js": "/carolsite/static/js/main.f2101b0a.js",
-    "static/media/Comfortaa-VariableFont_wght.ttf": "/carolsite/static/media/Comfortaa-VariableFont_wght.7b8c952927af2b0deacd.ttf",
-    "static/media/flowers.avif": "/carolsite/static/media/flowers.7e3e974054b99fe4a001.avif",
-    "static/media/Overlock-Black.ttf": "/carolsite/static/media/Overlock-Black.52a71d7e1cd597141d34.ttf",
-    "index.html": "/carolsite/index.html",
-    "main.32c71188.css.map": "/carolsite/static/css/main.32c71188.css.map",
-    "main.f2101b0a.js.map": "/carolsite/static/js/main.f2101b0a.js.map"
+    "main.css": "/drcarolmarcus.com/static/css/main.29178b1f.css",
+    "main.js": "/drcarolmarcus.com/static/js/main.f2101b0a.js",
+    "static/media/Comfortaa-VariableFont_wght.ttf": "/drcarolmarcus.com/static/media/Comfortaa-VariableFont_wght.7b8c952927af2b0deacd.ttf",
+    "static/media/flowers.avif": "/drcarolmarcus.com/static/media/flowers.7e3e974054b99fe4a001.avif",
+    "static/media/Overlock-Black.ttf": "/drcarolmarcus.com/static/media/Overlock-Black.52a71d7e1cd597141d34.ttf",
+    "index.html": "/drcarolmarcus.com/index.html",
+    "main.29178b1f.css.map": "/drcarolmarcus.com/static/css/main.29178b1f.css.map",
+    "main.f2101b0a.js.map": "/drcarolmarcus.com/static/js/main.f2101b0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.32c71188.css",
+    "static/css/main.29178b1f.css",
     "static/js/main.f2101b0a.js"
   ]
 }
